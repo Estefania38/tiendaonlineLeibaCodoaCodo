@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: #E9ECF4;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header header"
+                         "contenido contenido contenido contenido"
+                         "widget-1 widget-2 widget-3 widget-4"
+                         "footer footer footer footer";
+}
+
+.contenedor>div,
+.contenedor .header,
+.contenedor .sidebar,
+.contenedor .footer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    
+}
+.contenedor .contenido{
+	background: #fff;
+    padding: 2px;
+    border-radius: 4px;	
+}
+
+.contenedor .header {
+    background: white;
+    color: black;
+    grid-area: header;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /*aca defino como se llamara cada area*/
+} 
+
+.contact {
+    background-color:  #27199D;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px 0 0 50px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+.contact p{
+    justify-content: center;
+    font-size: 1em;
+    text-align: center; 
+}
+
+.fa-brands {    
+    margin-right: 10px;
+}
+
+.navgeneral {
+    width: 100%;
+}
+
+.navgeneral .contenedor-nav {
+    width: 100%;
+}
+
+.contenedor-nav .nav1 {
+    background-color: white;
+    display: flex;
+    align-items: center;/**/
+    justify-content: space-between;
+
+}
+.nav1 .logo { /**/
+    width: 100px;
+    margin: 0.5rem  1.5rem;
+    z-index: 10;
+}
+.nav1 
+.linksnav { /**/
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilos para itemsnav */
+.nav1 .itemsnav {
+    background-color: #e65B03;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 10px;
+    border-left: 0.1px solid #27199D;
+    max-height: 30%;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.itemsnav:hover {
+    color:  #27199D;
+}
+
+.contenedor-nav .nav2 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav2 .itemsnav {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 1rem 0 1rem;
+}
+
+.itemsnav:hover {   
+    color:  #27199D;
+}
+
+/* aca le doy estilo al contenido */
+.contenedor .contenido {
+    grid-area: contenido;
+    font-size: 17px;
+    color: #404040;
+    text-align: justify;
+	display: flex;
+	flex-direction: column;   
+
+}
+
+/* dando estilo al buscador de vuelos */
+.contenido .search {
+	background-image: linear-gradient(0, #A780FF 0%, #A780FF 100%);
+	height: 200px;	
+}
+
+.search .travel-search{
+	background-color:  #27199D;
+	color: #fff;
+	height: 150px; 
+	width: 95%;
+	margin: 2.5%;
+	border-radius: 8px;
+	
+}
+
+.travel-search .selec-travel{
+	width: 100%;
+	height: 30%;
+}
+
+.selec-travel .btn-travel{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+
+}
+.btn-travel h1{
+	color: #fff;
+	font-size: 20px;
+}
+
+.btn-travel .btn-box{
+	margin-top: 0.5rem;
+
+}
+
+.btn-box .button-fly{
+	color:#fff;
+	background: transparent;
+	font-size: 15px solid;
+	text-decoration: none;
+	width: 100%;
+	border-radius: 13px;
+	padding: 8px;
+	border: 2px solid white;
+	cursor: pointer;
+
+}
+.btn-box .button-fly:hover{
+	background-color: #fff;
+	color: #27199D;
+	font-weight: bold;
+}
+.info-box-container{
+    display: flex;
+    padding: auto;
+    margin-top: 15px;
+}
+.info-box-container .info-box1{
+    display: flex;
+    align-items: center;
+   
+}
+
+.info-box1 .info-travel{
+    background-color: #fff;
+	text-align: center;
+    width: auto;
+	height: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.info-box-container .info-box2{
+    display: flex;
+    align-items: center;
+   
+}
+ .info-box2 .info-travel{
+    background-color: #fff;
+    flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+    width: auto;
+	height: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 3px;
+}
+.info-travel .title-info{
+    color:#000;
+    font-family: roboto;
+    font-weight: lighter;
+}
+.info-travel .input-info{
+    color:#000 solid;
+    font-weight: bold;
+}
+
+.btn-box .button-search{
+	color:#fff;
+	background: transparent;
+	font-size: 15px solid;
+	text-decoration: none;
+	width: 100%;
+	border-radius: 13px;
+	padding: 8px;
+	border: 2px solid white;
+	cursor: pointer;
+
+}
+.btn-box .button-search:hover{
+	background-color: #fff;
+	color: #27199D;
+	font-weight: bold;
+}
+
+.banner{
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.banner .banner-index  {
+    width: 100%;
+}   
+
+.centrado{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color:aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+	
+
+/* aca le doy estilo a la widget */
+.contenedor .widget-1,
+.contenedor .widget-2,
+.contenedor .widget-3,
+.contenedor .widget-4 {
+    background-image: linear-gradient(0, #A780FF 0%, #A780FF 100%);
+	color: #fff;
+	height: auto;
+	text-align:center;
+	display: flex;
+    align-items: center;
+	justify-content: center;  
+    padding: 2rem 0.5rem;
+    
+}
+.widget-1 .ofertas-index{
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    text-align: center;    
+}
+.ofertas-index .brs-ofertas{
+    width: 100%;
+    border-radius: 5px;
+}
+.ofertas-index .centrado{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 2.5px; 
+    color:aliceblue;
+}
+
+.contenedor .widget-1 {
+	grid-area: widget-1;
+}
+.contenedor .widget-2 {
+	grid-area: widget-2;
+}
+.contenedor .widget-3 {
+	grid-area: widget-3;
+}
+.contenedor .widget-4 {
+	grid-area: widget-4;
+}
+
+/* aca le doy estilo al footer */
+.contenedor .footer {
+	background:  #27199D;
+	color: #fff;
+	grid-area: footer;
+    
+}
+.footer .footer-redes {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+    
+}
+.footer-redes .footer-phone-link{
+    text-decoration: none;
+    color: inherit;
+}
+.footer-redes .footer-list-title{
+    font-weight: 500;
+    color: #444;
+    pointer-events: none;
+}
+
+.footer-redes .footer-contact{
+    color:#fff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight:bold;  
+    vertical-align: baseline; 
+}
+.footer .footer-grid{
+    display: grid;
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "list1 list2 list3 list4"
+                         
+}
+
+.footer .title-li{
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+
+}
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    
+}
+.footer ul li{
+    font-size: 12px; 
+    cursor: pointer ;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; 
+    margin: 0.2rem;   
+}
+
+.footer ul li a{
+    font-size: 12px; 
+    cursor: pointer ;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.footer .list1{
+    grid-area: list1;
+}
+.footer .list2{
+    grid-area: list2;
+}
+.footer .list3{
+    grid-area: list3;
+}
+.footer .list4{
+    grid-area: list4;
+}
+
+.footer p{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+    text-align: center;
+}

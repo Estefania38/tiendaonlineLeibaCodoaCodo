@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/commons.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Mi sitio</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">             
+            <nav class="navgeneral">
+                <div class="contenedor-nav">
+                    <div class="nav1">
+                        <a href="index.html">
+                            <img class="logo" src="./img/logo.png" alt="logo">
+                        </a>
+                        <div class="linksnav">
+                            <a class="contact" href="https://wa.me/1156133481?text=hola">
+                                <i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff;"></i>
+                                <p>Para ventas 0810-810-9994</p>
+                            </a>
+                            <a class="itemsnav" href="login.html">Iniciar Sesion</a>
+                            <a class="itemsnav" href="reservas.html">Mis Reservas</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </nav>
+        </header>
+        <main class="contenido">         
+            <form  class="form-register" action="" >
+                <h1>Agencia de viajes</h1> 
+                <h2>Mi formulario de registro</h2>
+                <label class="form-label" for="nombre">Nombre</label>
+                <input class="form-control" type="text" name="nombre" id="nombre">
+                <label  class="form-label" for="apellido">Apellido</label>
+                <input  class="form-control" type="text" name="apellido" id="apellido">               
+                <br>
+                <label  class="form-label" for="genero">Genero</label>
+                <input class="select" type="radio" name="genero" >Hombre
+                <input class="select" type="radio" name="genero" >Mujer
+                <input class="select" type="radio" name="genero" >Otro
+                <br>
+                <label  class="form-label" for="fnac">Fecha de naimiento</label>
+                <input class="form-control" type="date" name="fnac" id="fnac">
+                <br>
+                <label  class="form-label" for="InputEmail">Ingrese su Email</label>
+                <input  class="form-control" type="email" name="email" placeholder="Ingrese su email" id="email">
+                <label  class="form-label" for="InputEmail">Confirme su Email</label>
+                <input  class="form-control" type="email" name="reconfirmacion_email" placeholder="Confirme su email">
+                <label  class="form-label" for="clave">Contraseña</label>
+                <input  class="form-control" type="password" name="contraseña" placeholder="Contraseña" id="clave">
+                <label  class="form-label" for="clave">Confirme su contraseña</label>
+                <input  class="form-control" type="password" name="reconfirmacion_contraseña" placeholder="Confirme su contraseña">
+                <br>
+               
+                <label  class="form-label" for="intereses">Que te interesa: </label>
+                <input  class="select" type="checkbox" name="preferencias" value="vuelos">Vuelos
+                <input  class="select" type="checkbox" name="preferencias" value="hoteles">Hoteles
+                <input  class="select" type="checkbox" name="preferencias" value="paquetes">Paquetes
+                <br>
+                <button class="button" type="submit"><a href="index.html">
+                   Registrarse</a></button>
+                <button type="submit" class="button"><a href="login.html">
+                 Ya estoy registrado</a></button>            
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="footer-redes">
+                <h3>Seguinos en las redes</h3>
+                <a href="https://www.facebook.com/DespegarArgentina">
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;" alt="facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/despegar/">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://wa.me/1156133481?text=hola">
+                    <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;" alt="whatsapp"></i>
+                </a>
+                <a class="footer-phone-link" href="tel:0810810994">
+                    <strong class="footer-list-title">Para ventas</strong>
+                    <span id="footer-contact">0810-810-9994</span>
+                </a>
+                <a class="footer-phone-link" href="#">
+                    <strong class="footer-list-title">Postventa</strong>
+                    <span class="footer-contact" ><a class="footer-contact" href="contacto.html">Centro de contacto</a></span>
+                </a>
+            </div>
+        </footer>
+    </div>
+<script src="https://kit.fontawesome.com/ef36828462.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+

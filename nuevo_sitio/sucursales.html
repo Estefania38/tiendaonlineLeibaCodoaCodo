@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sucursales.css">
+    <title>Mi sitio</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <nav class="navgeneral">
+                <div class="contenedor-nav">
+                    <div class="nav1">
+                        <a href="index.html">
+                            <img class="logo" src="./img/logo.png" alt="logo">
+                        </a>
+                        <div class="linksnav">
+                            <a class="contact" href="https://wa.me/1156133481?text=hola">
+                                <i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff;"></i>
+                                <p>Para ventas 0810-810-9994</p>
+                            </a>
+                            <a class="itemsnav" href="quienes_somos.html">Quienes somos</a>
+                            <a class="itemsnav" href="login.html">Iniciar Sesion</a>
+                            <a class="itemsnav" href="reservas.html">Mis Reservas</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </nav>
+        </header>
+        <main class="contenido">
+            <div class="container">
+                <h2>Encuentra la sucursal mas cercana<h2>
+            <!--desde google map puedo insertar el mapa y directamente copio la etiqueta iframe que me genera google-->
+            <div class="mapas">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.8234357100982!2d-58.52629272487558!3d-34.50736025241464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb105adb5713b%3A0xb6bfa8555b403511!2sAlmundo!5e0!3m2!1ses-419!2sar!4v1694630331369!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form-contacto">
+                <h4>Solicite su presupuesto</h4>
+                <form class="f-c" action="">
+                    <input class="consulta" type="text" name="nombre" placeholder="Nombre">
+                    <input class="consulta" type="tel" name="telefono" placeholder="Teléfono">
+                    <input class="consulta" type="email" name="email" placeholder="Email">
+                    <textarea class="text-area" name="consulta" placeholder="Escriba su consulta"></textarea>
+                    <!-- <input type="submit" value="Enviar"> -->
+                    <br>
+                    <button class="button" type="submit"><a href="index.html">
+                       Enviar</a></button>                    
+                </form>
+            </div>
+        </div>
+        </main>
+        <aside class="sidebar">
+            <div class="sucursales">
+                <div class="cards">
+                    <h3>Unicenter Shopping, Buenos Aires</h3>
+                    <!--con la etiqueta a puedo agregar el enlace al mapa, con target="_blank" le indico que lo abra en otra ventana-->
+                    <a target="_blank" href="https://goo.gl/maps/DBQVt2XT5dx4Ct9e8">
+                        <i class="fa-solid fa-arrow-right fa-xl" style="color: #27199D;"></i>
+                    </a>
+                    <p><i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i> Av. Parana 3745, 3er piso
+                        Local 3040. Martinez</p>
+                    <p><i class="fa-regular fa-clock fa-sm" style="color: #000000;"></i> Lunes a viernes de 10 a 19hs</p>
+                    <p><i class="fa-regular fa-envelope fa-sm" style="color: #000000;"></i> unicenter@thynktravel.com</p>
+                    <p><i class="fa-solid fa-phone fa-sm" style="color: #000000;"></i> 0810-222-1031 (interno 108)</p>
+                </div>
+                <div class="cards">
+                    <h3>Devoto Shopping, CABA </h3>
+                    <a target="_blank" href="https://goo.gl/maps/G7x3S3ZmdCR9Uif56">
+                        <i class="fa-solid fa-arrow-right fa-xl" style="color: #27199D;"></i>
+                    </a>
+                    <p><i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i> Quevedo 3365, Nivel 3,
+                        local 303, Devoto Shopping</p>
+                    <p><i class="fa-regular fa-clock fa-sm" style="color: #000000;"></i> Lunes a Viernes de 10 a 20hs</p>
+                    <p><i class="fa-regular fa-envelope fa-sm"
+                            style="color: #000000;"></i> devoto@thynktravel.com</p>
+                    <p><i class="fa-solid fa-phone fa-sm" style="color: #000000;"></i> 0810-222-1031 (interno 102)</p>
+                </div>
+                <div class="cards">
+                    <h3>Alto Avellaneda Shopping, Buenos Aires</h3>
+                    <a target="_blank" href=" https://goo.gl/maps/25Mz9eNZspXfWCtt9">
+                        <i class="fa-solid fa-arrow-right fa-xl" style="color: #27199D;"></i>
+                    </a>
+                    <p><i class="fa-solid fa-location-dot fa-sm" style="color: #000000;"></i> Av. General Guemes 897,
+                        Planta Baja Local 229</p>
+                    <p><i class="fa-regular fa-clock fa-sm" style="color: #000000;"></i> Lunes a Viernes de 10 a 21hs</p>
+                    <p><i class="fa-regular fa-envelope fa-sm"
+                            style="color: #000000;"></i> avellaneda@thynktravel.com</p>
+                    <p><i class="fa-solid fa-phone fa-sm" style="color: #000000;"></i> 0810-222-1031 (interno 103)</p>
+                </div>
+            </div>
+        </aside>
+        <footer class="footer">
+            <div class="footer-redes">
+                <h3>Seguinos en las redes</h3>
+                <a href="https://www.facebook.com/DespegarArgentina">
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;" alt="facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/despegar/">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://wa.me/1156133481?text=hola">
+                    <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;" alt="whatsapp"></i>
+                </a>
+                <a class="footer-phone-link" href="tel:0810810994">
+                    <strong class="footer-list-title">Para ventas</strong>
+                    <span id="footer-contact">0810-810-9994</span>
+                </a>
+                <a class="footer-phone-link" href="#">
+                    <strong class="footer-list-title">Postventa</strong>
+                    <span class="footer-contact" ><a class="footer-contact" href="contacto.html">Centro de contacto</a></span>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/ef36828462.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

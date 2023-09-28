@@ -1,0 +1,64 @@
+/* aca le doy estilo al contenido */
+.contenedor .contenido {
+    grid-area: contenido;
+    font-size: 13px;
+    color: #404040;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.contenido h1 {
+    color: #0a3f74;
+    font-size: 25px;
+    margin: 3rem;
+}
+
+.form-login {
+    /*esta es la class del div contenedor del form*/
+    margin: 3rem 5rem;
+
+}
+
+.form-label {
+    margin-bottom: 0.57em;
+    color: #000;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.form-control {
+    display: block;
+    font-size: 0.8rem;
+    width: 100%;
+    height: 25px;
+    line-height: 1.5;
+    appearance: none;
+    border: 1.5px solid;
+    border-radius: 10px;
+    border-color: #27199D;
+    align-items: center;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.button {
+    text-transform: none;
+    background-color: #e65B03;
+    border-radius: 10px;
+    margin: 0 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none !important;
+}
+.button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #27199D;
+    border-color: #0a3f74;
+    text-decoration: none;
+}
+

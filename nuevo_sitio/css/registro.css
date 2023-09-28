@@ -1,0 +1,192 @@
+/* aca le doy estilo al contenido del form */
+.contenedor .contenido {
+    grid-area: contenido;
+    font-size: 13px;
+    color: #404040;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-register {
+    /*esta es la class del dvi cintenedor del form*/
+    margin: 1rem 5rem;
+    padding: 2.5rem;
+    border: 1px solid #27199D;
+    border-radius: 2%;
+} 
+
+.form-register h1 {
+    color: #0a3f74;
+    font-size: 25px;
+    margin: 1rem;
+    text-align: center;
+}
+.form-register h2 {
+    color: #404040;
+    font-size: 20px;
+    text-align: center;
+}
+.form-label {
+    margin-bottom: 0.57em;
+    margin-top: 0.5em;
+    color:  #0a3f74;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.form-control {
+    display: block;
+    font-size: 0.8rem;
+    width: 100%;
+    height: 25px;
+    line-height: 1.5;
+    appearance: none;
+    border: 1.5px solid;
+    border-radius: 10px;
+    border-color: #27199D;
+    align-items: center;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.select{
+    margin-left: 1rem ;
+}
+
+.button {
+    text-transform: none;
+    background-color: #e65B03;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 0.5rem 1rem;
+    border: none !important;
+}
+
+.button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #27199D;
+    border-color: #0a3f74;
+    text-decoration: none;
+
+}
+
+
+/* aca le doy estilo al footer */
+.contenedor .footer {
+    background: #27199D;
+    color: white;
+    grid-area: footer;
+    text-decoration: none;
+}
+
+.footer .footer-redes {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px auto;
+}
+h3 {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-redes .footer-phone-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-redes .footer-list-title {
+    font-weight: 500;
+    color: #444;
+    pointer-events: none;
+}
+
+
+.footer-redes .footer-contact{
+    color:#fff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight:bold;  
+    vertical-align: baseline; 
+}
+.footer .footer-grid{
+    display: grid;
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "list1 list2 list3 list4"
+                         
+}
+
+.footer .title-li{
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+
+}
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    
+}
+.footer ul li{
+    font-size: 12px; 
+    cursor: pointer ;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; 
+    margin: 0.2rem;   
+}
+
+.footer ul li a{
+    font-size: 12px; 
+    cursor: pointer ;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.footer .list1{
+    grid-area: list1;
+}
+.footer .list2{
+    grid-area: list2;
+}
+.footer .list3{
+    grid-area: list3;
+}
+.footer .list4{
+    grid-area: list4;
+}
+
+.footer p{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+    text-align: center;
+}
+
+
+
+
+
+

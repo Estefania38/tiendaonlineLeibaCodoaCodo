@@ -1,0 +1,40 @@
+.contenedor-nav .nav2 {
+    display: flex;
+}
+
+.nav2  .list-group{
+    color: #000;
+    font-size: 15px;
+    display: flex;
+    width: 100%;
+}
+
+.list-group .list-nav {
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+    margin: 0.1rem;
+    padding: 0.1rem; 
+    display: flex;
+    width: 100%;
+    justify-content: center;   
+}
+
+
+.list-nav .itemsnav {
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.itemsnav i {
+    margin: 1rem;
+}
+
+.itemsnav:hover {   
+    color:  #27199D;
+}
+
